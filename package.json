@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "npm run build && node --env-file=.env ./dist/index.js"
+    "start": "npm run build && node --env-file=.env ./dist/index.js",
+    "test:int": "./scripts/run-integration.sh",
+    "test:int:ui": "./scripts/run-integration.sh --ui"
   },
   "author": "",
   "license": "ISC",
@@ -18,8 +20,10 @@
   "devDependencies": {
     "@types/express": "^5.0.2",
     "@types/node": "^22.15.21",
+    "eslint-config-prettier": "^10.1.5",
     "prisma": "^6.8.2",
     "tsx": "^4.19.4",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.2"
   }
 }
