@@ -1,4 +1,4 @@
-BikeBook is Facebook like socialmedia platform, created for cyclist of all categories.
-Backend is designed and implemented in Express NodeJs application.
-POSTRESQL is used for data storing and PrismaORM as ORM of this project.
+DevsLink is LinkedIn like media platform, created for developers with all kinds of specialities.
+Backend is designed and implemented in an Express NodeJs application.
+PostgreSQL is used for data storage, and PrismaORM is the ORM of this project.
 
