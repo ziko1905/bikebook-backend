@@ -10,7 +10,8 @@ export const errorMiddleware = (
 ) => {
   if (Object.getPrototypeOf(err) === Error.prototype) {
     console.error(err.stack);
-    return res.status(500).send({ error: CODE_ERROR_MESSAGE });
+    res.status(500).send({ error: CODE_ERROR_MESSAGE });
+    return;
   }
 
   res.status((err as RequestError).statusCode).send({
